@@ -1,0 +1,6 @@
+<div>
+    <h2 *ngIf="name==='Camila'; else nameNotFound">Nome: Camila</h2>
+    <ng-template #nameNotFound>
+        <h2>Nome não encontrado.</h2>
+    </ng-template>
+</div>
