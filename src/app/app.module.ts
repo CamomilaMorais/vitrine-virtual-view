@@ -8,7 +8,11 @@ import { DirectivesComponent } from './components/directives/directives.componen
 import { EventsComponent } from './components/events/events.component';
 import { ChangeValueComponent } from './components/change-value/change-value.component';
 import { EmitterComponent } from './components/emitter/emitter.component';
-import {BrowserAnimationsModule} from '@angular/platform-browser/animations';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import { LoginComponent } from './@shared/components/login/login.component';
+import { CheckboxModule } from 'primeng/checkbox';
+import { ButtonModule } from 'primeng/button';
+import { InputTextModule } from 'primeng/inputtext';
 
 @NgModule({
   declarations: [
@@ -17,12 +21,16 @@ import {BrowserAnimationsModule} from '@angular/platform-browser/animations';
     DirectivesComponent,
     EventsComponent,
     ChangeValueComponent,
-    EmitterComponent
+    EmitterComponent,
+    LoginComponent
   ],
   imports: [
     BrowserModule,
     BrowserAnimationsModule,
-    AppRoutingModule
+    AppRoutingModule,
+    CheckboxModule,
+    ButtonModule,
+    InputTextModule
   ],
   providers: [],
   bootstrap: [AppComponent]
