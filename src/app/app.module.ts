@@ -13,6 +13,7 @@ import { LoginComponent } from './@shared/components/login/login.component';
 import { CheckboxModule } from 'primeng/checkbox';
 import { ButtonModule } from 'primeng/button';
 import { InputTextModule } from 'primeng/inputtext';
+import { DividerModule } from "primeng/divider";
 
 @NgModule({
   declarations: [
@@ -30,7 +31,8 @@ import { InputTextModule } from 'primeng/inputtext';
     AppRoutingModule,
     CheckboxModule,
     ButtonModule,
-    InputTextModule
+    InputTextModule,
+    DividerModule
   ],
   providers: [],
   bootstrap: [AppComponent]

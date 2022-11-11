@@ -228,3 +228,46 @@
 .icon-turquoise{
     color: #269170;
 }
+
+.p-button {
+    color: #ffffff;
+    background: #269170;
+    border: 1px solid #269170;
+    padding: 10px 10px;
+    font-size: 1rem;
+    transition: background-color 0.2s, color 0.2s, border-color 0.2s, box-shadow 0.2s;
+    border-radius: 6px;
+    margin-top: 20px;
+    width: 240px;
+}
+
+.p-button-reverse {
+    color: #269170;
+    background: #ffffff;
+    border: 1px solid #269170;
+    padding: 10px 10px;
+    font-size: 1rem;
+    transition: background-color 0.2s, color 0.2s, border-color 0.2s, box-shadow 0.2s;
+    border-radius: 6px;
+    margin-top: 20px;
+    width: 240px;
+}
+
+.layout-sidebar-logo {
+    min-height: 70px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1;
+}
+
+.p-divider-horizontal.p-divider-left {
+}
+.p-divider-horizontal:before {
+    position: inherit;
+    display: block;
+    top: 50%;
+    left: 0;
+    width: 100%;
+    content: "";
+}

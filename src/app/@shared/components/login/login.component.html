@@ -8,7 +8,7 @@
     </div>
     <br>
     <div>
-        <div class="field col-12 md:col-4" style="margin-top: 20px;">
+        <div class="field col-12 md:col-4" style="margin-top: 10px;">
             <span class="p-float-label">
                 <input type="text" id="email1" pInputText class="w-full"> 
                 <label for="email1">Usuário</label>
@@ -26,15 +26,36 @@
                 <label for="rememberme1" class="text-900">Remember me</label>
                 -->
             </div>
-            <a class="font-medium no-underline ml-2 text-blue-500 text-right cursor-pointer">Esqueceu a senha?</a>
+            <a
+                class="font-medium ml-2 text-blue-500 text-right cursor-pointer"
+                style="text-decoration-line: underline;color: #fd7e14 !important;">
+                Esqueceu a senha
+            </a>
         </div>
 
-        <div>
-            <button pButton pRipple label="Entrar" icon="pi pi-user" class="w-full" style="margin-top: 20px;"></button>
+        <div class="text-center mb-3">
+            <button pButton pRipple label="Entrar" icon="pi pi-sign-in"></button>
         </div>
         
     </div>
-    <span class="text-600 font-medium line-height-3">Don't have an account?</span>
-    <a class="font-medium no-underline ml-2 text-blue-500 cursor-pointer">Create today!</a>
+    <div class="text-center mb-3 flex align-items-center justify-content-between mb-6" style="margin-top: 20px;padding-bottom: 10px;">
+        <span class="font-medium no-underline ml-2 text-600 text-right cursor-pointer">Não tem acesso ainda?</span>
+        <div>
+            <button pButton pRipple label="Criar Acesso" icon="pi pi-user" class="p-button-reverse" style="margin-top: 20px;"></button>
+        </div>
+    </div>
+    
+    <div>
+        <p-divider></p-divider>
+    </div>
 
+    <div class="text-center mb-3 flex align-items-center justify-content-between mb-6" style="margin-top: 20px;">
+        <span class="font-medium no-underline ml-2 text-600 text-right cursor-pointer">Dúvidas?</span>
+        <a
+            class="font-medium ml-2 text-blue-500 text-right cursor-pointer"
+            style="text-decoration-line: underline;color: #fd7e14 !important;">Fale Conosco!</a>
+        <div class="layout-sidebar-logo">
+            <img width="30" style="vertical-align: middle" alt="logo-if" src="/assets/images/logo.svg">
+        </div>
+    </div>
 </div>
