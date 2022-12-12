@@ -4,16 +4,19 @@ import { PrimeNGConfig } from 'primeng/api';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { HomeComponent } from './@home/components/home/home.component';
-import { DirectivesComponent } from './components/directives/directives.component';
-import { EventsComponent } from './components/events/events.component';
-import { ChangeValueComponent } from './components/change-value/change-value.component';
-import { EmitterComponent } from './components/emitter/emitter.component';
+import { DirectivesComponent } from './@shared/components/directives/directives.component';
+import { EventsComponent } from './@shared/components/events/events.component';
+import { ChangeValueComponent } from './@shared/components/change-value/change-value.component';
+import { EmitterComponent } from './@shared/components/emitter/emitter.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { LoginComponent } from './@shared/components/login/login.component';
 import { CheckboxModule } from 'primeng/checkbox';
 import { ButtonModule } from 'primeng/button';
 import { InputTextModule } from 'primeng/inputtext';
 import { DividerModule } from "primeng/divider";
+import { AccountComponent } from './@shared/components/account/account.component';
+import { AutoCompleteModule } from 'primeng/autocomplete';
+import { InputMaskModule } from "primeng/inputmask";
 
 @NgModule({
   declarations: [
@@ -23,7 +26,8 @@ import { DividerModule } from "primeng/divider";
     EventsComponent,
     ChangeValueComponent,
     EmitterComponent,
-    LoginComponent
+    LoginComponent,
+    AccountComponent
   ],
   imports: [
     BrowserModule,
@@ -32,7 +36,9 @@ import { DividerModule } from "primeng/divider";
     CheckboxModule,
     ButtonModule,
     InputTextModule,
-    DividerModule
+    DividerModule,
+    AutoCompleteModule,
+    InputMaskModule
   ],
   providers: [],
   bootstrap: [AppComponent]
